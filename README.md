@@ -132,6 +132,14 @@ public override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
+### Notes For Brightness specified Usage
+#  only use -0.00f to 0.00f value 
+                    GPUImageBrightnessFilter brightness = new GPUImageBrightnessFilter();
+                    gpuImageView.setFilter(brightness);
+                    brightness.setBrightness(0.09f);
+ 
+ otherwise is not working brightness features
+
 ### Support status of [GPUImage for iOS](https://github.com/BradLarson/GPUImage2) shaders
 - [x] Saturation
 - [x] Contrast
